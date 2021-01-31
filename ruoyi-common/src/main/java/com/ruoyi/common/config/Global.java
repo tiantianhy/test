@@ -1,5 +1,6 @@
 package com.ruoyi.common.config;
 
+
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -26,6 +27,17 @@ public class Global
 
     /** 上传路径 */
     private static String profile;
+
+    /** 文件替换路径 */
+    private static String replaceText;
+
+    public static  String getReplaceText() {
+        return replaceText;
+    }
+
+    public static void setReplaceText(String replaceText) {
+        Global.replaceText = replaceText;
+    }
 
     /** 获取地址开关 */
     private static boolean addressEnabled;
